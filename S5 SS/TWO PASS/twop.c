@@ -62,10 +62,11 @@ void main() {
     tlen /= 10; 
     trec[9] = (tlen % 10) + '0'; 
     fprintf(obj, "%s\n", trec); 
-    fprintf(obj, "E^%06X\n", straddr); 
+    fprintf(obj, "E^%06d\n", straddr); 
     fclose(inter); 
     fclose(symtab); 
     fclose(optab); 
     fclose(obj); 
     fclose(lengthf); 
+
 }
