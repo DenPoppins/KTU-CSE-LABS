@@ -51,11 +51,12 @@ void main(){
         fscanf(fp1, "%s%s%s", label, opcode, operand); 
     } 
     fprintf(fp3, "%d\t%s\t%s\t%s\n", locctr, label, opcode, operand); 
-    fprintf(fp5, "%d\n", (locctr - straddr)); 
+    fprintf(fp5, "%X\n", (locctr - straddr)); 
     fclose(fp1); 
     fclose(fp2); 
     fclose(fp3); 
     fclose(fp4); 
     fclose(fp5); 
  
+
 } 
